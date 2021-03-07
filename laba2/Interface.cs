@@ -42,7 +42,7 @@ namespace laba2
                               "далее выберите тип шифра и способ ввода.\n" +
                               "Автор: Хлебников Роман \n" +
                               "Группа: 494 \n" +
-                              "Лабароторная работа №1 \n" +
+                              "Лабораторная работа №1 \n" +
                               "Вариант 15 (5)");
         }
 
@@ -129,7 +129,6 @@ namespace laba2
                         variant = Interface.InputInt();
                         break;
                 }
-            Console.WriteLine();
 
             PrintAnswer(str,transformedStr);
             SaveInitialData(str);
@@ -238,7 +237,6 @@ namespace laba2
         /// <returns></returns>
         private static string MakeAnswer(string initial, string transformed)
         {
-            Console.WriteLine();
             var answer = "Введенная строка: \n" +
                          initial +
                          "\nИзмененная строка: \n" +
