@@ -44,11 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algorithm.cs" />
+    <Compile Include="Cezar.cs" />
     <Compile Include="FileSystem.cs" />
+    <Compile Include="ICipher.cs" />
     <Compile Include="Interface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ROT13.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

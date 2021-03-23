@@ -198,7 +198,7 @@ namespace laba2
 
             if (variant == (int) SaveChoice.Yes)
             {
-                FileSystem.OpenFileForWrite(answer);
+                FileSystem.OpenFileForWrite(transformed);
             }
         }
 

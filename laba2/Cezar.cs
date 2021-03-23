@@ -1,42 +1,7 @@
 ﻿namespace laba2
 {
-    /// <summary>
-    /// Интерфейс для методов шифрования
-    /// </summary>
-    internal interface ICipher
-    {
-        string Encode(string text);
 
-        string Decode(string text);
-    }
-    /// <summary>
-    /// Класс, реализующий шифрование ROT13
-    /// </summary>
-    public class Rot13Cipher : ICipher
-    {
-        /// <summary>
-        /// Метод для шифрования
-        /// </summary>
-        /// <param name="text"> Текст для шифрования </param>
-        /// <returns> Зашифрованный текст </returns>
-        public string Encode(string text)
-        {
-            var cezar = new CezarCipher();
-            return cezar.Encode(text, 13);
-        }
-        /// <summary>
-        /// Метод для расшифрования
-        /// </summary>
-        /// <param name="text"> Текст для расшифрования </param>
-        /// <returns> расшифрованный текст </returns>
-        public string Decode(string text)
-        {
-            var cezar = new CezarCipher();
-            return cezar.Decode(text, 13);
-        }
-    }
-
-    public class CezarCipher 
+    public class CezarCipher : ICipher
     {
         private const string latin = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         private const string rus = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
